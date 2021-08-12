@@ -104,7 +104,7 @@ ODA_NormalObject_Number=index_number(1:n-Abnormal_number,:);%The number of the n
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Calculation of the actual detection rate/accuracy rate/false alarm rate and other evaluation indicators of the GAE%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%Real_NormalObject_Number represents the number of the real normal object in the data set，Real_AbnormalObject_Number represents the number of the truly outliers in the data set
+%%%%Real_NormalObject_Number represents the number of the real normal object in the data set锛孯eal_AbnormalObject_Number represents the number of the truly outliers in the data set
 [Real_NormalObject_Number,Real_Normal]=find(Label==0);
 [Real_AbnormalObject_Number,Real_Abnormal]=find(Label==1);
 
@@ -140,10 +140,10 @@ fprintf('FAR= %8.5f\n',FAR*100)
 
 
 
-scatter(testPlot(:,1),testPlot(:,2),25) ;
-hold on
-for i=1:Abnormal_number%画数据集当中真正的离群点 
-    scatter(testPlot(Real_AbnormalObject_Number(i,:),1),testPlot(Real_AbnormalObject_Number(i,:),2),50,'g','d','filled') ;
-    hold on
-end
+%scatter(testPlot(:,1),testPlot(:,2),25) ;
+%hold on
+%for i=1:Abnormal_number
+%    scatter(testPlot(Real_AbnormalObject_Number(i,:),1),testPlot(Real_AbnormalObject_Number(i,:),2),50,'g','d','filled') ;
+%   hold on
+%end
 end
