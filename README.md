@@ -7,3 +7,5 @@
 * 1. first normalize the ODDS public dataset.
 * 2. Convert the processed dataset into .txt file format and input the graph construct function, adjusting the parameters according to the dataset.
 * 3. Input the normalized dataset X together with the generated graph into the GAE function for training, and the training results and parameters are detailed in the GAE function.
+## https://github.com/yzhao062/anomaly-detection-resources  Toolbox of outlier detection
+## https://elki-project.github.io/                          Toolbox of outlier detection
